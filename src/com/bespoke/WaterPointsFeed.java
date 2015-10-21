@@ -56,7 +56,7 @@ public class WaterPointsFeed {
 	 */
 	private String getJson() throws IOException {
 
-		InputStream is = this.getClass().getClassLoader()
+		InputStream is = this.getClass()
 				.getResourceAsStream("water-points.json");
 		String jsonData = IOUtils.toString(is, "UTF-8");
 		return jsonData;
